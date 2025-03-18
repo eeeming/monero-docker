@@ -2,6 +2,7 @@
 
 ```
 git clone https://github.com/Mingg817/monero-docker.git
+cd monero-docker
 wget https://raw.githubusercontent.com/monero-project/monero/refs/heads/master/utils/gpg_keys/binaryfate.asc
 docker build -t monero-docker .
 ```
