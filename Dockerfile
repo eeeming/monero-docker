@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-ARG MONERO_VERSION=v0.18.4.0
+ARG MONERO_VERSION=v0.18.4.2
 
 RUN apt-get update && \
     apt-get install -y wget gpg bzip2&& \
