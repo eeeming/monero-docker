@@ -7,6 +7,14 @@ wget https://raw.githubusercontent.com/monero-project/monero/refs/heads/master/u
 docker build -t monero-docker .
 ```
 
+You may need to set up the PROXY to download from `getmonero.org`.
+
+```
+docker build --build-arg HTTP_PROXY=<HTTP_PROXY address> --build-arg HTTPS_PROXY=<HTTPS_PROXY address> -t monero-docker .
+```
+
+> Tips: DO NOT USING `127.0.0.1` in the `HTTP_PROXY` and `HTTPS_PROXY` settings.
+
 RUN docker image
 ```
 docker run -it -d \
@@ -17,5 +25,3 @@ docker run -it -d \
     -v <your Monero data file path>:/data \
     monero-docker
 ```
-
-**Please modify the parameters of CMD as necessary.**
