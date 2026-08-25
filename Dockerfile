@@ -29,6 +29,8 @@ CMD [\
     "--data-dir=/data",\
     "--p2p-bind-ip=0.0.0.0", \
     "--p2p-bind-port=18080",\
+    "--p2p-bind-ipv6-address=::",\
+    "--p2p-bind-port-ipv6=18080",\
     "--p2p-use-ipv6", \
     "--rpc-bind-ip=0.0.0.0", \
     "--rpc-bind-ipv6-address=::",\
@@ -37,6 +39,6 @@ CMD [\
     "--non-interactive", \
     "--confirm-external-bind",\
     "--restricted-rpc",\
-    "--db-sync-mode=safe:sync"\
-    ,"--disable-dns-checkpoints"\
+    "--db-sync-mode=safe:sync",\
+    "--disable-dns-checkpoints"\
     ]
